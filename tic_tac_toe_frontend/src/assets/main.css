@@ -1,35 +1,41 @@
 @import './base.css';
 
+/* Root layout */
 #app {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+/* Ocean Professional overrides */
+:root {
+  --ocean-primary: #2563EB;
+  --ocean-secondary: #F59E0B;
+  --ocean-error: #EF4444;
+  --ocean-bg: #f9fafb;
+  --ocean-surface: #ffffff;
+  --ocean-text: #111827;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+/* Page background tuned in App.vue; keep body clean here */
+body {
+  background: transparent;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+/* Utility surfaces */
+.surface {
+  background: var(--ocean-surface);
+  color: var(--ocean-text);
+}
+.surface-subtle {
+  background: transparent;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+/* Links minimal */
+a {
+  color: var(--ocean-primary);
+  text-decoration: underline;
+}
+a:hover {
+  opacity: 0.9;
 }

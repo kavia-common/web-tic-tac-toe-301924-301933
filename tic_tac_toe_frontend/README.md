@@ -1,45 +1,38 @@
-# vue-kavia
+# Ocean Tic Tac Toe (Vue 3 + Vite)
 
-This template should help get you started developing with Vue 3 in Vite.
+A clean, modern two-player Tic Tac Toe built with Vue 3 (Composition API) and Vite. Runs fully on the client with no backend dependencies and follows the Ocean Professional theme.
 
-## Recommended IDE Setup
+## How to Play
+- Player X starts.
+- Click an empty cell to place your mark.
+- Players alternate turns until someone wins or the board is full (draw).
+- Click "Reset Game" to start a new round.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Development
 
-## Type Support for `.vue` Imports in TS
+Environment variables (VITE_*) are used as provided by the environment; no new variables are required.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+Install dependencies:
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
+Start the dev server on port 3000:
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
-
+Build for production:
 ```sh
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
+Run unit tests:
 ```sh
 npm run test:unit
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
+Lint:
 ```sh
 npm run lint
 ```
